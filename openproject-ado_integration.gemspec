@@ -6,7 +6,7 @@ require "open_project/ado_integration/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "openproject-ado_integration"
-  s.version     = OpenProject::AdoIntegration::VERSION
+  s.version     = OpenProjectdocks ::AdoIntegration::VERSION
 
   s.authors     = "OpenProject GmbH"
   s.email       = "info@openproject.org"
@@ -16,4 +16,6 @@ Gem::Specification.new do |s|
   s.license     = "FIXME" # e.g. "MIT" or "GPLv3"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + %w(CHANGELOG.md README.md)
+  
+  s.add_dependency "rails", '~> 7.0'
 end
